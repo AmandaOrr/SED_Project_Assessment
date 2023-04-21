@@ -26,6 +26,7 @@ body{
     color: #23022E;
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 nav{
@@ -162,6 +163,44 @@ img{
     margin-right: 20px;
 }
 
+footer  {
+    background-image: url(assets/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    padding: .25em 0 0;
+    justify-content: flex-start;
+    border-top-right-radius: 22px;
+    border-top-left-radius: 22px;
+}
+
+footer h4{
+    text-decoration: underline;
+}
+#footer{
+    background-color: #AF929D;
+    padding: 2% 1% 15%;
+    border-top-right-radius:22px ;
+    border-top-left-radius:22px ;
+}
+
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    margin-bottom: 2%;
+}
+
+.footer-box a {
+    color: #23022E;
+    font-weight: 700;
+}
+
+.footer-box a:visited {
+    color: #565857;
+    font-weight: 700;
+}
+
 
 @media (min-width: 400px) { 
   html{
@@ -198,6 +237,8 @@ img{
         font-size: 2em;
         color:#23022E;
     }
+
+
 
 }
 
