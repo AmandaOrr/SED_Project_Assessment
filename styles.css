@@ -48,11 +48,28 @@ nav a:visited {
     box-shadow: 1px 4px 14px -5px rgba(86,88,87,0.74);
 }
 
+
+
 h1, h2, h3{
     font-family: 'Titan One', cursive;
     color: #A8C69F;
     text-shadow: 2px 1px #23022E;
 }
+
+section h2 {
+    color: #565857;
+    text-shadow: 2px 1px #A8C69F;
+}
+
+.card h3{
+    font-size: 2rem;
+}
+
+section{
+    text-align: center;
+    padding-top: 5%;
+}
+
 
 .flex-container{
     display: flex;
@@ -65,6 +82,7 @@ img{
 .card{
     border-radius: 22px;
     box-shadow: 1px 4px 14px 2px rgba(86,88,87,0.81);
+    background-color: #FEFDFF;
 }
 
 .card img {
@@ -72,7 +90,7 @@ img{
 }
 
 .card a{
-    margin-top: 3%;
+    margin-top: 1%;
     color:#23022E;
     background-color: #AF929D;
     padding:2% 5%;
@@ -90,6 +108,7 @@ img{
   display: flex;
   flex-direction: row;
   width: 100vw;
+  margin-top: 4%;
 }
 
 .panel {
@@ -125,7 +144,23 @@ img{
   transition: opacity 0.3s ease-in 0.2s;
 }
 
+#section-about{
+    background-color: #FEFDFF;
+    border-radius: 22px;
+    box-shadow: 1px 4px 14px -5px rgba(86,88,87,0.77);
+    padding: 5%;
+    text-align: center;
+}
 
+#section-about ul {
+    list-style-type: none;
+}
+
+#section-about ul li {
+    display: inline;
+    padding: 15px;
+    margin-right: 20px;
+}
 
 
 @media (min-width: 400px) { 
@@ -159,6 +194,10 @@ img{
         width: 50%;
     }
 
+    i {
+        font-size: 2em;
+        color:#23022E;
+    }
 
 }
 
