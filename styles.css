@@ -170,6 +170,7 @@ footer  {
     justify-content: flex-start;
     border-top-right-radius: 22px;
     border-top-left-radius: 22px;
+    text-align: center;
 }
 
 footer h4{
@@ -183,10 +184,8 @@ footer h4{
 }
 
 #footer-message{
-    text-align: center;
     text-decoration: none;
     font-weight: bold;
-    width: 100vw;
     margin-bottom: 2%;
 }
 .footer-box{
@@ -194,6 +193,7 @@ footer h4{
     flex-direction: column;
     line-height: 1.5em;
     margin-bottom: 2%;
+    max-width: 100%;
 }
 
 .footer-box a {
