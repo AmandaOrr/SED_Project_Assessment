@@ -14,16 +14,18 @@ Card/ section backgrounds : white #FEFDFF
 
 
 /*universal base styles*/
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body{
-   
-    margin: 0;
-    box-sizing: border-box;
     background-image: url(assets/background.png);
     background-position: center;
     background-attachment: fixed;
     color: #23022E;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 nav{
@@ -84,12 +86,54 @@ img{
     box-shadow: 1px 4px 14px -3px rgba(86,88,87,0.77);
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.panel {
+  max-width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: all 400ms ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 3;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.2s;
+}
+
 
 
 
 @media (min-width: 400px) { 
+  html{
+    width: 100vw;
+  }
     .hero {
-        padding: 50% 25%;
+        padding: 50% 15%;
         background-image: url(assets/hero.jpg);
         background-position: center;
         background-size: cover;
@@ -114,47 +158,14 @@ img{
     img{
         width: 50%;
     }
-    .container {
-        display: flex;
-        flex-direction: row;
-        width: 80vw;
-      }
-      .panel {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 60vh;
-        border-radius: 50px;
-        color: #fff;
-        cursor: pointer;
-        flex: 0.5;
-        margin: 10px;
-        position: relative;
-        -webkit-transition: all 400ms ease-in;
-      }
-      
-      .panel h3 {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        margin: 0;
-        opacity: 0;
-      }
-      
-      .panel.active {
-        flex: 5;
-      }
-      
-      .panel.active h3 {
-        opacity: 1;
-        transition: opacity 0.3s ease-in 0.2s;
-      }
+
+
 }
 
 /* Medium devices (tablets, 550px and up)*/
 @media (min-width: 550px) {  
     .hero {
-        padding: 15% 40%;
+        padding: 15% 20%;
         background-image: url(assets/hero.jpg);
         background-position: center;
         background-size: cover;
@@ -177,42 +188,7 @@ img{
         padding: 2%;
         margin: 5% 0;
     }
-    .container {
-        display: flex;
-        flex-direction: row;
-        width: 80vw;
-      }
-      .panel {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 60vh;
-        border-radius: 50px;
-        color: #fff;
-        cursor: pointer;
-        flex: 0.5;
-        margin: 10px;
-        position: relative;
-        -webkit-transition: all 400ms ease-in;
-      }
-      
-      .panel h3 {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        margin: 0;
-        opacity: 0;
-      }
-      
-      .panel.active {
-        flex: 5;
-      }
-      
-      .panel.active h3 {
-        opacity: 1;
-        transition: opacity 0.3s ease-in 0.2s;
-      }
-    
+
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -242,41 +218,7 @@ img{
         align-items: center;
         padding: 2%;
     }
-    .container {
-        display: flex;
-        flex-direction: row;
-        width: 80vw;
-      }
-      .panel {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 60vh;
-        border-radius: 50px;
-        color: #fff;
-        cursor: pointer;
-        flex: 0.5;
-        margin: 10px;
-        position: relative;
-        -webkit-transition: all 400ms ease-in;
-      }
-      
-      .panel h3 {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        margin: 0;
-        opacity: 0;
-      }
-      
-      .panel.active {
-        flex: 5;
-      }
-      
-      .panel.active h3 {
-        opacity: 1;
-        transition: opacity 0.3s ease-in 0.2s;
-      }
+
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
@@ -304,41 +246,6 @@ img{
         align-items: center;
         padding: 2%;
     }
-    .container {
-        display: flex;
-        flex-direction: row;
-        width: 80vw;
-      }
-      .panel {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 80vh;
-        border-radius: 50px;
-        color: #fff;
-        cursor: pointer;
-        flex: 0.5;
-        margin: 10px;
-        position: relative;
-        -webkit-transition: all 400ms ease-in;
-      }
-      
-      .panel h3 {
-        font-size: 30px;
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        margin: 0;
-        opacity: 0;
-      }
-      
-      .panel.active {
-        flex: 5;
-      }
-      
-      .panel.active h3 {
-        opacity: 1;
-        transition: opacity 0.3s ease-in 0.2s;
-      }
+
  }
 
