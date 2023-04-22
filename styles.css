@@ -208,6 +208,11 @@ footer h4{
     font-weight: 700;
 }
 
+address{
+    text-align: left;
+    margin-top: 5%;
+    line-height: .5em;
+}
 
 @media (min-width: 360px) { 
   html{
