@@ -208,10 +208,17 @@ footer h4{
     font-weight: 700;
 }
 
+
 address{
-    text-align: left;
+    text-align: center;
     margin-top: 5%;
     line-height: .5em;
+}
+
+input[type="submit"] {
+    background-color: #d1Ac00;
+    border: 2px solid #565857;
+    border-radius: 10px;
 }
 
 @media (min-width: 360px) { 

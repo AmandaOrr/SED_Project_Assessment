@@ -24,11 +24,11 @@ var currentTime = new Date().getHours();
 var statusElement = document.getElementById("status");
 
 // Set the default status
-var storeHours = "<p><i class='fa-solid fa-moon'></i> Location : Closed</p>";
+var storeHours = "<p><i class='fa-solid fa-moon'></i>    Storefront : Closed</p>";
 
 // Check the time and update the status accordingly
 if (currentTime >= 11 && currentTime < 19) {
-    storeHours = "<p><i class='fa-solid fa-sun'></i> Location : Open</p>";
+    storeHours = "<p><i class='fa-solid fa-sun'></i>     Storefront : Open</p>";
 }
 
 // Update the status element
