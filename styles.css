@@ -99,6 +99,12 @@ img{
     box-shadow: 1px 4px 14px -5px rgba(86,88,87,0.77);
 }
 
+.card a:hover{
+    background-color: #d1Ac00;
+    color: #AF929D;
+    text-decoration: underline;
+}
+
 .panel{
     box-shadow: 1px 4px 14px -3px rgba(86,88,87,0.77);
 }
